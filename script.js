@@ -22,7 +22,7 @@ var elEncabezado = document.querySelector("header");
 
 var loPrincipal = document.querySelector("main");
 
-var lorenIpsum = ["párrafo","texto","escrito","pasaje","enunciado"];
+var lorenIpsum = ["Viaje de Chihiro","Castillo en el cielo","Totoro","Ponyo","Kiki"];
 
 function setup() {
     noCanvas();
@@ -37,13 +37,13 @@ function setup() {
 }
 
 function portada() {
-    createSpan("Estás en index.html").parent("title");
-    createElement('p','Y este es un '+random(lorenIpsum)+' en la portada.').parent(loPrincipal);
+    createSpan("Estás en Portada.html").parent("title");
+    createElement('p','Me gustan las películas Ghibli '+random(lorenIpsum)+' en la portada.').parent(loPrincipal);
     select("a:nth-child(1)").style("font-weight", "bold").style("color", "#000000");
 }
 
 function pagina() {
     createSpan("Estás en page.html").parent("title");
-    createElement('p','Y este es un '+random(lorenIpsum)+' en la página.').parent(loPrincipal);
+    createElement('p','Me gustan las películas Ghibli '+random(lorenIpsum)+' en la página.').parent(loPrincipal);
     select("a:nth-child(2)").style("font-weight", "bold").style("color", "#000000");
 }
