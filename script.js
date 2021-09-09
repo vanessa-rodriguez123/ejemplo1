@@ -38,7 +38,7 @@ function setup() {
 
 function portada() {
     createSpan("Estás en page.html").parent("title");
-    createElement('p','Me gustan las películas Ghibli, en espacial '+random(lorenIpsum)+' en la portada.').parent(loPrincipal);
+    createElement('p','Me gustan las películas Ghibli, en espacial '+random(lorenIpsum)).parent(loPrincipal);
     select("a:nth-child(1)").style("font-weight", "bold").style("color", "#000000");
 }
 
